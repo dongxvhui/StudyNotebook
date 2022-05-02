@@ -192,6 +192,35 @@ $ ls
 
 提交修改：pull request(等待作者审核)
 
+
+
+遇到的问题
+
+同样的文件更改后上传，会报错Updates were rejected because the remote contains work that you do，需要
+
+1.先拉下来，会自动合并的（不用操心）
+
+git pull origin master
+
+2、再上传
+
+git push -u origin master
+
+在操作GIT版本控制器时，经常会出现以下内容：
+
+`Please enter a commit message to explain why this merge is necessary,
+especially if it merges an updated upstream into a topic branch。`
+ 导致按什么键都不起作用，接麦呢被锁住了。
+
+解决方案：
+
+输入“：wq”，注意是英文输入状态下的冒号，然后按下“Enter”键即可。
+
+个人多次遇到，特总结下供网友们交流互勉。
+
+“ :wq”是Linux操作系统命令： 表示强制性写入文件并退出。
+
+
 ### gitee
 
 跟github 类似
