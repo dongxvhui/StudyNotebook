@@ -1,4 +1,4 @@
-# git 必知必会
+# git必知必会
 
 ## git安装（略）
 
@@ -192,7 +192,11 @@ $ ls
 
 提交修改：pull request(等待作者审核)
 
+### gitee
 
+跟github 类似
+
+获取公钥，ssh粘贴公钥，创建仓库，推送，克隆项目，拉项目。
 
 ## 分支管理
 
@@ -482,17 +486,56 @@ To github.com:dongxvhui/learngit.git
 
 ## 个性化
 
-配置全局颜色
+### 配置全局颜色
 
 ~~~
 $ git config --global color.ui true
 ~~~
 
-忽略特殊文件
+### 忽略特殊文件
 
 编写 .gitignore
 
-配置别名
+idea版本控制忽略特殊文件干净上传
+
+注：一定要先配置.gitignore规则，然后再将项目纳入版本控制。
+
+​        一定要先配置.gitignore规则，然后再将项目纳入版本控制。
+
+​        一定要先配置.gitignore规则，然后再将项目纳入版本控制。
+
+重要的事情说三遍，否则，.gitignore不生效。
+
+常用的.gitignore配置（针对idea，直接复制粘贴即可）
+
+~~~~
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
+
+HELP.md
+**/mvnw
+**/mvnw.cmd
+
+**/.mvn
+**/target/
+
+.idea
+
+**/.gitignore
+~~~~
+
+
+
+### 配置别名
 
 ~~~
 命令
